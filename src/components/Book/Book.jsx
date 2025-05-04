@@ -1,4 +1,4 @@
-import logo from 'images/goit-logo.png';
+// import logo from 'images/goit-logo.png';
 import {
   Wrapper,
   Border,
@@ -12,20 +12,20 @@ import {
   FollowersQuantity,
   FollowBtn,
   StyledImg,
-} from './TweeterCard.styled';
+} from './Book.styled';
 
-export default function TweeterCard({
+export default function Book({
   id,
   user,
-  tweets,
+  books,
   followers,
   avatar,
   setFollowing,
   isFollowing,
 }) {
-  const nextFollowersQuantity = (isFollowing ? 1 : 0) + followers;
-  const tweetsQuantity = tweets.toLocaleString('en-EN');
-  const followersQuantity = nextFollowersQuantity.toLocaleString('en-EN');
+  // const nextFollowersQuantity = (isFollowing ? 1 : 0) + followers;
+  // const tweetsQuantity = books.toLocaleString('en-EN');
+  // const followersQuantity = nextFollowersQuantity.toLocaleString('en-EN');
 
   return (
     <Wrapper>
@@ -35,11 +35,11 @@ export default function TweeterCard({
           <StyledImg src={avatar} width="62" height="62" alt="user" />
         </InnerCircleBorder>
       </CircleBorder>
-      <LogoGOIT>
+      {/* <LogoGOIT>
         <img src={logo} width="76" height="22" alt="logo" />
-      </LogoGOIT>
+      </LogoGOIT> */}
       <Decor />
-      <InteractiveContentWrapper>
+      {/* <InteractiveContentWrapper>
         <TweetersName>
           <strong>{user}</strong>
         </TweetersName>
@@ -52,7 +52,7 @@ export default function TweeterCard({
         >
           {isFollowing ? 'Following' : 'Follow'}
         </FollowBtn>
-      </InteractiveContentWrapper>
+      </InteractiveContentWrapper> */}
     </Wrapper>
   );
 }

@@ -1,8 +1,8 @@
 {
-  "name": "tweets-cards-test",
+  "name": "oleh-kraiukhin",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AH400796.github.io/tweets-cards-test/",
+  "homepage": "https://AH400796.github.io/oleh-kraiukhin/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",

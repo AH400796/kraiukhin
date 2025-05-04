@@ -14,7 +14,8 @@ export const AppContent = styled.div`
 
 export const Main = styled.main`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: flex-start;
   flex: 1 0 auto;
+  gap: 50px;
 `;

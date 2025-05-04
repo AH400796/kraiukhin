@@ -1,12 +1,11 @@
 import { Wrapper } from './pages.styled';
-import About from 'components/About/About';
 import Section from 'components/Section/Section';
 
-export default function Footer() {
+export default function Contacts() {
   return (
     <Wrapper>
       <Section>
-        <About />
+        <h2>Мій емейл: gansyk@gmail.com</h2>
       </Section>
     </Wrapper>
   );

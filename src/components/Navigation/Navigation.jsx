@@ -4,10 +4,13 @@ export default function Navigation() {
   return (
     <Wrapper>
       <StyledLink to="/" end>
-        Home
+        Про автора
       </StyledLink>
-      <StyledLink to="/tweets" end>
-        Tweets
+      <StyledLink to="/books" end>
+        Бібліографія
+      </StyledLink>
+      <StyledLink to="/contacts" end>
+        Зв'язатись
       </StyledLink>
     </Wrapper>
   );

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { getTweeters } from 'services/api';
+import { getBooks } from 'services/api';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { notify } from 'helpers/notification';
 
@@ -16,13 +16,13 @@ import {
   StyledLabel,
   NoFilterText,
   StyledSelect,
-} from './TweetersList.styled';
-import TweeterCard from 'components/TweeterCard/TweeterCard';
+} from './BooksList.styled';
+import Book from 'components/Book/Book';
 
-export default function TweetsList() {
+export default function BooksList() {
   const [noFilterResult, setNoFilterResult] = useState(false);
-  const [tweeters, setTweeters] = useState([]);
-  const [params, setParams] = useState({ page: 1, limit: 3 });
+  const [books, setBooks] = useState([]);
+  const [params, setParams] = useState({ page: 1, limit: 2 });
   const [searchParams, setSearchParams] = useSearchParams();
   const loadMoreButtonRef = useRef(null);
   const [filter, setFilter] = useState('show all');
@@ -35,8 +35,8 @@ export default function TweetsList() {
     setSearchParams({ page: 1, limit: params.limit });
     (async () => {
       try {
-        const response = await getTweeters(params);
-        setTweeters([...response.data]);
+        const response = await getBooks(params);
+        setBooks([...response.data]);
       } catch (error) {
         notify('error', 'Sorry, something goes wrong...');
       }
@@ -45,7 +45,7 @@ export default function TweetsList() {
 
   useEffect(() => {
     loadMoreButtonRef.current.scrollIntoView({ behavior: 'smooth' });
-  }, [tweeters]);
+  }, [books]);
 
   useEffect(() => {
     if (!noFilterResult) {
@@ -56,7 +56,7 @@ export default function TweetsList() {
   const handleLoadMore = () => {
     setParams(prevState =>
       prevState.limit < 10
-        ? { ...prevState, limit: prevState.limit + 3 }
+        ? { ...prevState, limit: prevState.limit + 2 }
         : prevState
     );
   };
@@ -72,41 +72,41 @@ export default function TweetsList() {
     }));
   };
 
-  const getFilteredTweeters = () => {
+  const getFilteredBooks = () => {
     switch (filter) {
       case 'follow':
-        return tweeters.filter(tweeter => following[tweeter.id] !== true);
+        return books.filter(book => following[book.id] !== true);
       case 'followings':
-        return tweeters.filter(tweeter => following[tweeter.id] === true);
+        return books.filter(book => following[book.id] === true);
       default:
-        return tweeters;
+        return books;
     }
   };
-  const filteredTweeters = getFilteredTweeters();
+  const filteredBooks = getFilteredBooks();
 
   localStorage.setItem(`following`, JSON.stringify(following));
   console.log(noFilterResult);
 
   return (
     <Wrapper>
-      <Title>Famousts tweeters</Title>
+      <Title>Мої видані та (ще) не видані книги</Title>
 
-      {filteredTweeters.length === 0 && noFilterResult ? (
+      {filteredBooks.length === 0 && noFilterResult ? (
         <NoFilterText>
           There are no tweeters with such filter settings...
         </NoFilterText>
       ) : (
         <CardsWrapper>
           <CardsList>
-            {filteredTweeters.map(tweeter => {
-              const { id, user, tweets, followers, avatar } = tweeter;
+            {filteredBooks.map(book => {
+              const { id, user, books, followers, avatar } = book;
               const isFollowing = following[id] ? following[id] : false;
               return (
-                <TweeterCard
+                <Book
                   key={id}
                   id={id}
                   user={user}
-                  tweets={tweets}
+                  books={books}
                   followers={followers}
                   avatar={avatar}
                   setFollowing={handleFollowing}
@@ -125,7 +125,7 @@ export default function TweetsList() {
         </BackButtons>
         <StyledLabel>
           Filter tweeters?
-          <StyledSelect name="tweeters" onChange={handleChange}>
+          <StyledSelect name="books" onChange={handleChange}>
             <option value="show all">show all</option>
             <option value="follow">follow</option>
             <option value="followings">followings</option>

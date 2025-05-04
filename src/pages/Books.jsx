@@ -1,12 +1,13 @@
 import { Wrapper } from './pages.styled';
-import About from 'components/About/About';
+import BooksList from 'components/BooksList/BooksList';
+
 import Section from 'components/Section/Section';
 
-export default function Footer() {
+export default function Books() {
   return (
     <Wrapper>
       <Section>
-        <About />
+        <BooksList />
       </Section>
     </Wrapper>
   );

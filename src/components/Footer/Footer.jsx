@@ -6,7 +6,7 @@ export default function Footer() {
     <StyledFooter>
       <Container>
         <FooterText>
-          © 2023 <b>All rights reserved</b>
+          © 2025 <b>Усі права захищено</b>
         </FooterText>
       </Container>
     </StyledFooter>
