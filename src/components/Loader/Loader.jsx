@@ -5,10 +5,10 @@ export default function Loader() {
   return (
     <Wrapper>
       <RotatingLines
-        strokeColor="#5736a3"
-        strokeWidth="5"
+        strokeColor="#bb4646"
+        strokeWidth="3"
         animationDuration="0.75"
-        width="250"
+        width="50"
         visible={true}
       />
     </Wrapper>

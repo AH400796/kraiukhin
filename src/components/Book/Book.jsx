@@ -1,58 +1,13 @@
 // import logo from 'images/goit-logo.png';
-import {
-  Wrapper,
-  Border,
-  CircleBorder,
-  InnerCircleBorder,
-  Decor,
-  LogoGOIT,
-  InteractiveContentWrapper,
-  TweetersName,
-  TweetsQuantity,
-  FollowersQuantity,
-  FollowBtn,
-  StyledImg,
-} from './Book.styled';
+import { Wrapper, BookName, StyledImg } from './Book.styled';
 
-export default function Book({
-  id,
-  user,
-  books,
-  followers,
-  avatar,
-  setFollowing,
-  isFollowing,
-}) {
-  // const nextFollowersQuantity = (isFollowing ? 1 : 0) + followers;
-  // const tweetsQuantity = books.toLocaleString('en-EN');
-  // const followersQuantity = nextFollowersQuantity.toLocaleString('en-EN');
-
+export default function Book({ name, cover }) {
   return (
     <Wrapper>
-      <Border />
-      <CircleBorder>
-        <InnerCircleBorder>
-          <StyledImg src={avatar} width="62" height="62" alt="user" />
-        </InnerCircleBorder>
-      </CircleBorder>
-      {/* <LogoGOIT>
-        <img src={logo} width="76" height="22" alt="logo" />
-      </LogoGOIT> */}
-      <Decor />
-      {/* <InteractiveContentWrapper>
-        <TweetersName>
-          <strong>{user}</strong>
-        </TweetersName>
-        <TweetsQuantity>{tweetsQuantity} Tweets</TweetsQuantity>
-        <FollowersQuantity>{followersQuantity} Followers</FollowersQuantity>
-        <FollowBtn
-          type="button"
-          onClick={() => setFollowing(id)}
-          data-following={isFollowing}
-        >
-          {isFollowing ? 'Following' : 'Follow'}
-        </FollowBtn>
-      </InteractiveContentWrapper> */}
+      <StyledImg src={cover} width="150" height="200" alt={name} />
+      <BookName>
+        <strong>{name}</strong>
+      </BookName>
     </Wrapper>
   );
 }

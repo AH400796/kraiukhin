@@ -1,32 +1,28 @@
-import { Link } from 'react-router-dom';
-import { Wrapper, Title, LinkSpan } from './About.styled';
+// import { Link } from 'react-router-dom';
+import { Wrapper, ParagraphStyled } from './About.styled';
 
 export default function About() {
   return (
     <Wrapper>
-      <Title>Social networks around us</Title>
-      <p>
-        Hi! Now all the people of the world are confused on social networks,
-        they are almost everywhere: on mobile phones, tablets, computers,
-        televisions and other gadgets such as electronic watches, bracelets,
-        auto-navigators and other. Social networks have become an integral part
-        of a each person. From them we can learn almost everything important and
-        unimportant: weather, news, people's mood, emotions, dreams, plans,
-        secrets...
-      </p>
-      <p>
-        Famous people are also no exception - all of them undeniably use social
-        networks, winning thousands of fans and followers with their posts and
-        to whom the veil of their personal lives is opened through posts.
-      </p>
-      <p>
-        Do you know some of the most popular tweeters? No? Then come{' '}
-        <Link to="/tweets">
-          <LinkSpan>here</LinkSpan>
-        </Link>{' '}
-        and find out who of the world's celebrities are biggest social networks
-        users!
-      </p>
+      {/* <Title></Title> */}
+      <ParagraphStyled>
+        Олег Краюхін — сучасний український письменник, відомий своїм дебютним
+        романом «Вітер у голові», який вийшов у 2025 році. Ця книга поєднує
+        елементи пригодницького фентезі та сатиричної прози, розповідаючи
+        історію львівського велокур’єра Максима, який після участі в
+        експерименті з вакциною потрапляє у вир неймовірних подій протягом
+        одного тижня. Книжковий інтернет-магазин Наш Формат Роман отримав
+        позитивні відгуки за дотепний стиль, гумор та живі діалоги. (Книга
+        доступна в українських книжкових онлайн-магазинах, зокрема в «Наш
+        Формат» та «Bizlit». )
+      </ParagraphStyled>
+      <ParagraphStyled>
+        Олег Краюхін активно взаємодіє зі своєю аудиторією, особисто даруючи
+        книги з автографами, що свідчить про його відкритість та бажання
+        підтримувати зв'язок із читачами. Instagram Хоча детальна біографічна
+        інформація про автора наразі обмежена, його творчість вже привернула
+        увагу літературної спільноти та читачів.
+      </ParagraphStyled>
     </Wrapper>
   );
 }
