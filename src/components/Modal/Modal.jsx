@@ -4,22 +4,22 @@ import { useEffect } from 'react';
 
 const modalRoot = document.querySelector('#modal-root');
 
-export const Modal = ({ onClick, children }) => {
+export default function Modal({ onOverlayClick, children }) {
   useEffect(() => {
     const handleEscDown = e => {
       if (e.code === 'Escape') {
-        onClick();
+        onOverlayClick();
       }
     };
     window.addEventListener('keydown', handleEscDown);
     return () => {
       window.removeEventListener('keydown', handleEscDown);
     };
-  }, [onClick]);
+  }, [onOverlayClick]);
 
   const handleBackdropClick = e => {
     if (e.target === e.currentTarget) {
-      onClick();
+      onOverlayClick();
     }
   };
   return createPortal(
@@ -28,4 +28,4 @@ export const Modal = ({ onClick, children }) => {
     </Overlay>,
     modalRoot
   );
-};
+}

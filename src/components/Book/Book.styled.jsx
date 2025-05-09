@@ -11,6 +11,7 @@ export const Wrapper = styled.li`
   padding: 20px 30px 10px;
   border-radius: 20px;
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
 
   &:hover,
   &:focus {

@@ -31,7 +31,7 @@ const contacts = [
     name: 'Instagram',
     href: 'https://x.com/notifications',
     Component: InstagramIcon,
-    color: '#ce58c4',
+    color: '#ff5495',
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const contacts = [
     name: 'WhatsApp',
     href: 'https://x.com/notifications',
     Component: WhatsappIcon,
-    color: '#1dcf26',
+    color: '#05a30d',
   },
   {
     id: 6,
