@@ -16,6 +16,7 @@ export const Wrapper = styled.li`
   &:hover,
   &:focus {
     transform: scale(1.05);
+    background: #e0a7a7;
   }
 `;
 
