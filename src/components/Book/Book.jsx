@@ -1,4 +1,3 @@
-// import logo from 'images/goit-logo.png';
 import { Wrapper, BookName, StyledImg } from './Book.styled';
 
 export default function Book({ name, cover }) {
