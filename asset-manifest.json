@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/kraiukhin/static/css/main.2be2dbbc.css",
-    "main.js": "/kraiukhin/static/js/main.786417f3.js",
-    "static/js/292.3571e4e6.chunk.js": "/kraiukhin/static/js/292.3571e4e6.chunk.js",
-    "static/js/11.777d03a3.chunk.js": "/kraiukhin/static/js/11.777d03a3.chunk.js",
-    "static/js/779.798a5433.chunk.js": "/kraiukhin/static/js/779.798a5433.chunk.js",
+    "main.js": "/kraiukhin/static/js/main.d6688a25.js",
+    "static/js/534.f49b39ad.chunk.js": "/kraiukhin/static/js/534.f49b39ad.chunk.js",
+    "static/js/213.c327ce58.chunk.js": "/kraiukhin/static/js/213.c327ce58.chunk.js",
+    "static/js/152.ef223148.chunk.js": "/kraiukhin/static/js/152.ef223148.chunk.js",
+    "static/media/foto.jpg": "/kraiukhin/static/media/foto.d094b090c11618bc0d57.jpg",
+    "static/media/ball.jpg": "/kraiukhin/static/media/ball.4854956ec2c0afcb4a58.jpg",
+    "static/media/bike.jpg": "/kraiukhin/static/media/bike.1543c70b387eb297f2af.jpg",
     "static/media/nomoney.png": "/kraiukhin/static/media/nomoney.4c75ab1b808973f0605b.png",
     "static/media/wind-in-the-head.png": "/kraiukhin/static/media/wind-in-the-head.484058dac9f8e5a77f23.png",
     "static/media/instagram.svg": "/kraiukhin/static/media/instagram.612b4526687cf2c2057745e9061501a6.svg",
@@ -18,13 +21,13 @@
     "static/media/contacts.svg": "/kraiukhin/static/media/contacts.1c78298e2d018558a88b55bbf5bfcea8.svg",
     "static/media/quill.svg": "/kraiukhin/static/media/quill.f009a6cf8bf586761bc56d4b84c027ee.svg",
     "main.2be2dbbc.css.map": "/kraiukhin/static/css/main.2be2dbbc.css.map",
-    "main.786417f3.js.map": "/kraiukhin/static/js/main.786417f3.js.map",
-    "292.3571e4e6.chunk.js.map": "/kraiukhin/static/js/292.3571e4e6.chunk.js.map",
-    "11.777d03a3.chunk.js.map": "/kraiukhin/static/js/11.777d03a3.chunk.js.map",
-    "779.798a5433.chunk.js.map": "/kraiukhin/static/js/779.798a5433.chunk.js.map"
+    "main.d6688a25.js.map": "/kraiukhin/static/js/main.d6688a25.js.map",
+    "534.f49b39ad.chunk.js.map": "/kraiukhin/static/js/534.f49b39ad.chunk.js.map",
+    "213.c327ce58.chunk.js.map": "/kraiukhin/static/js/213.c327ce58.chunk.js.map",
+    "152.ef223148.chunk.js.map": "/kraiukhin/static/js/152.ef223148.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2be2dbbc.css",
-    "static/js/main.786417f3.js"
+    "static/js/main.d6688a25.js"
   ]
 }
