@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
         {/* <Route path="/" element={<Navigate to="/about" replace={true} />} /> */}
         <Route path="/" element={<SharedLayout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Navigate to="/about" replace={true} />} />
           <Route path="about" element={<Home />} />
           <Route path="books" element={<Books />} />
           <Route path="contacts" element={<Contacts />} />
