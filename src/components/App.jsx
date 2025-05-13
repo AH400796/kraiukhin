@@ -10,7 +10,6 @@ export default function App() {
   return (
     <>
       <Routes>
-        {/* <Route path="/" element={<Navigate to="/about" replace={true} />} /> */}
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Navigate to="/about" replace={true} />} />
           <Route path="about" element={<Home />} />
