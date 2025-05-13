@@ -9,14 +9,14 @@ export const Wrapper = styled.li`
   transition: 0.25s ease-in-out;
 
   padding: 20px 30px 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   cursor: pointer;
 
   &:hover,
   &:focus {
     transform: scale(1.05);
-    background: #e0a7a7;
+    background: #e7b5a6;
   }
 `;
 
@@ -30,7 +30,7 @@ export const BookName = styled.span`
   font-size: 20px;
   text-align: center;
   padding: 20px 0 0 0;
-  border-top: 2px solid #bb4646;
+  border-top: 2px solid #c45634;
   text-transform: uppercase;
-  color: #bb4646;
+  color: #c45634;
 `;

@@ -1,10 +1,14 @@
-import { StyledHeader } from './Header.styled';
-import Container from 'components/Container/Container';
+import {
+  StyledHeader,
+  // StyledImg
+} from './Header.styled';
+
+// import { data } from 'data/data';
 
 export default function HeaderSection() {
   return (
     <StyledHeader>
-      <Container></Container>
+      {/* <StyledImg src={data.autograph} width="400" height="50" /> */}
     </StyledHeader>
   );
 }

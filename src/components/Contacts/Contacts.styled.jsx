@@ -23,18 +23,25 @@ export const CardsList = styled.ul`
   column-gap: 30px;
   list-style: none;
 
-  color: #bb4646;
+  color: #c45634;
 
   @media screen and (min-width: 1280px) {
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.p`
   padding: 40px 0;
   text-align: center;
+  text-indent: 30px;
   font-size: 22px;
   line-height: 1.5;
   color: #575555;
+`;
+
+export const Price = styled.span`
+  font-size: 24px;
+  font-weight: 700;
+  color: #ec2727;
 `;
 
 export const GmailIcon = styled(Gmail)`

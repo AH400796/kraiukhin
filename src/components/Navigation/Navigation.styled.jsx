@@ -24,18 +24,18 @@ export const StyledLink = styled(NavLink)`
   text-align: left;
   text-decoration: none;
   text-decoration: underline;
-  color: #bb4646;
+  color: #c45634;
   font-weight: 600;
 
   &:hover,
   &:focus {
     color: #ffffff;
-    background: #e0a7a7;
+    background: #e7b5a6;
   }
 
   &.active {
     color: #ffffff;
-    background: #bb4646;
+    background: #c45634;
     text-decoration: underline;
     text-decoration: none;
   }

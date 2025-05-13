@@ -22,12 +22,13 @@ export const Overlay = styled.div`
   align-items: center;
   overflow: hidden auto;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #0000007b;
+  backdrop-filter: blur(2px);
 `;
 
 export const ModalBody = styled.div`
-  width: 60vw;
-  padding: 44px 20px 16px;
+  width: 50vw;
+  min-height: 55vh;
   border-radius: 20px;
   background-color: #ffffff;
   animation: ${fadeInScale} 0.3s ease forwards;

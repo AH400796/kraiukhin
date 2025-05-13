@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const IconWrapper = styled.li`
   padding: 10px 10px;
-  color: #bb4646;
+  color: #c45634;
   border-radius: 30px;
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   transition: 0.2s ease-in-out;
@@ -31,5 +31,5 @@ export const ContactLink = styled.a`
 export const Icon = styled.svg``;
 
 export const Name = styled.strong`
-  color: #bb4646;
+  color: #c45634;
 `;

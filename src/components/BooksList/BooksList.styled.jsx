@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 `;
 
 export const CardsWrapper = styled.div`
@@ -21,7 +21,7 @@ export const CardsList = styled.ul`
   width: 100%;
 
   row-gap: 30px;
-  column-gap: 30px;
+  column-gap: 40px;
   list-style: none;
 
   @media screen and (min-width: 1280px) {
@@ -33,5 +33,5 @@ export const Title = styled.h2`
   text-align: center;
   font-size: 30px;
   line-height: 1.5;
-  color: #bb4646;
+  color: #c45634;
 `;

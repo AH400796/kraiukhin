@@ -1,28 +1,46 @@
-// import { Link } from 'react-router-dom';
-import { Wrapper, ParagraphStyled } from './About.styled';
+import { data } from 'data/data';
+
+import {
+  Wrapper,
+  ParagraphStyled,
+  FotoWrapper,
+  FotoWrapperRev,
+  StyledImg,
+} from './About.styled';
 
 export default function About() {
   return (
     <Wrapper>
-      {/* <Title></Title> */}
-      <ParagraphStyled>
-        Олег Краюхін — сучасний український письменник, відомий своїм дебютним
-        романом «Вітер у голові», який вийшов у 2025 році. Ця книга поєднує
-        елементи пригодницького фентезі та сатиричної прози, розповідаючи
-        історію львівського велокур’єра Максима, який після участі в
-        експерименті з вакциною потрапляє у вир неймовірних подій протягом
-        одного тижня. Книжковий інтернет-магазин Наш Формат Роман отримав
-        позитивні відгуки за дотепний стиль, гумор та живі діалоги. (Книга
-        доступна в українських книжкових онлайн-магазинах, зокрема в «Наш
-        Формат» та «Bizlit». )
-      </ParagraphStyled>
-      <ParagraphStyled>
-        Олег Краюхін активно взаємодіє зі своєю аудиторією, особисто даруючи
-        книги з автографами, що свідчить про його відкритість та бажання
-        підтримувати зв'язок із читачами. Instagram Хоча детальна біографічна
-        інформація про автора наразі обмежена, його творчість вже привернула
-        увагу літературної спільноти та читачів.
-      </ParagraphStyled>
+      <FotoWrapper>
+        <StyledImg
+          src={data.foto}
+          width="423"
+          height="564"
+          alt="Олег Краюхін"
+          title="Олег Краюхін"
+        ></StyledImg>
+        <ParagraphStyled>{data.text1}</ParagraphStyled>
+      </FotoWrapper>
+      <FotoWrapperRev>
+        <ParagraphStyled>{data.text2}</ParagraphStyled>
+        <StyledImg
+          src={data.basketball}
+          width="423"
+          height="317"
+          alt="Вечірній баскетбол з друзями"
+          title="Вечірній баскетбол з друзями"
+        ></StyledImg>
+      </FotoWrapperRev>
+      <FotoWrapper>
+        <StyledImg
+          src={data.bike}
+          width="423"
+          height="317"
+          alt="Велопрогулянки"
+          title="Велопрогулянки"
+        ></StyledImg>
+        <ParagraphStyled>{data.text3}</ParagraphStyled>
+      </FotoWrapper>
     </Wrapper>
   );
 }
