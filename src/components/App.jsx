@@ -10,13 +10,13 @@ export default function App() {
   return (
     <>
       <Routes>
+        <Route path="/" element={<Navigate to="/about" replace={true} />} />
         <Route path="/" element={<SharedLayout />}>
           <Route path="about" element={<Home />} />
           <Route path="books" element={<Books />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="*" element={<Navigate to="/about" replace={true} />} />
         </Route>
-        <Route path="/" element={<Navigate to="/about" replace={true} />} />
       </Routes>
     </>
   );
