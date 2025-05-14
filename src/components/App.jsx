@@ -3,8 +3,8 @@ import { lazy } from 'react';
 import SharedLayout from 'components/SharedLayout/SharedLayout';
 
 const Home = lazy(() => import('../pages/Home'));
-const Books = lazy(() => import('../pages/Books'));
-const Contacts = lazy(() => import('../pages/Contacts'));
+// const Books = lazy(() => import('../pages/Books'));
+// const Contacts = lazy(() => import('../pages/Contacts'));
 
 export default function App() {
   return (
@@ -12,8 +12,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Navigate to="about" replace={true} />} />
-          {/* <Route path="about" element={<Home />} />
-          <Route path="books" element={<Books />} />
+          <Route path="about" element={<Home />} />
+          {/* <Route path="books" element={<Books />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="*" element={<Navigate to="about" replace={true} />} /> */}
         </Route>
