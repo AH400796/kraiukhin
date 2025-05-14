@@ -11,7 +11,8 @@ export default function App() {
     <>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route index element={<Navigate to="about" replace />} />
+          <Route index element={<Home />} />
+          {/* <Route index element={<Navigate to="about" replace />} /> */}
           <Route path="about" element={<Home />} />
           <Route path="books" element={<Books />} />
           <Route path="contacts" element={<Contacts />} />
