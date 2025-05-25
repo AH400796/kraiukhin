@@ -13,6 +13,7 @@ import {
 
 export default function BookInfo({
   cover,
+  book,
   name,
   type,
   published,
@@ -30,7 +31,7 @@ export default function BookInfo({
         <TextWrapper>
           <Info>
             <InfoWrapper>
-              <SpanStyled>Назва книги:</SpanStyled>
+              <SpanStyled>{`Назва${book ? ' книги:' : ':'}`}</SpanStyled>
               <SpanStyled>Видання:</SpanStyled>
               <SpanStyled>Тип:</SpanStyled>
               <SpanStyled>Жанр:</SpanStyled>

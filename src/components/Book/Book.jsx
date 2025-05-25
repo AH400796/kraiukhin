@@ -29,6 +29,7 @@ export default function Book({
       {showModal && (
         <Modal onOverlayClick={onOverlayClick}>
           <BookInfo
+            book={myBooks[bookNumber - 1].book}
             name={myBooks[bookNumber - 1].name}
             type={myBooks[bookNumber - 1].type}
             cover={myBooks[bookNumber - 1].cover}

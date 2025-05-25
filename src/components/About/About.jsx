@@ -3,6 +3,7 @@ import { data } from 'data/data';
 import {
   Wrapper,
   ParagraphStyled,
+  ParagraphWrapper,
   FotoWrapper,
   FotoWrapperRev,
   StyledImg,
@@ -21,8 +22,18 @@ export default function About() {
         ></StyledImg>
         <ParagraphStyled>{data.text1}</ParagraphStyled>
       </FotoWrapper>
-      <FotoWrapperRev>
+      <ParagraphWrapper>
         <ParagraphStyled>{data.text2}</ParagraphStyled>
+        <ParagraphStyled>{data.text3}</ParagraphStyled>
+        <ParagraphStyled>{data.text4}</ParagraphStyled>
+        <ParagraphStyled>{data.text5}</ParagraphStyled>
+        <ParagraphStyled>{data.text6}</ParagraphStyled>
+        <ParagraphStyled>{data.text7}</ParagraphStyled>
+        <ParagraphStyled>{data.text8}</ParagraphStyled>
+        <ParagraphStyled>{data.text9}</ParagraphStyled>
+      </ParagraphWrapper>
+      <FotoWrapperRev>
+        <ParagraphStyled>{data.text10}</ParagraphStyled>
         <StyledImg
           src={data.basketball}
           width="423"
@@ -39,7 +50,7 @@ export default function About() {
           alt="Велопрогулянки"
           title="Велопрогулянки"
         ></StyledImg>
-        <ParagraphStyled>{data.text3}</ParagraphStyled>
+        <ParagraphStyled>{data.text11}</ParagraphStyled>
       </FotoWrapper>
     </Wrapper>
   );

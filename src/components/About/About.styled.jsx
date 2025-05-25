@@ -18,6 +18,15 @@ export const ParagraphStyled = styled.p`
   color: #575555;
 `;
 
+export const ParagraphWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: #ffffff;
+  width: 100%;
+  gap: 20px;
+`;
+
 export const StyledImg = styled.img`
   width: 423px;
   /* padding: 0 0 20px 0; */
