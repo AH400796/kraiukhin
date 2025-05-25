@@ -19,7 +19,7 @@ export default function BooksList() {
   return (
     <>
       <Wrapper>
-        <Title hidden>Мої книги</Title>
+        <Title hidden>Мої твори</Title>
 
         <CardsWrapper>
           <CardsList>

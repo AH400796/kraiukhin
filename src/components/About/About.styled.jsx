@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
 `;
 
 export const ParagraphStyled = styled.p`
-  /* padding: 10px 20px; */
   text-align: left;
   font-size: 20px;
   line-height: 1.5;
@@ -24,12 +23,10 @@ export const ParagraphWrapper = styled.div`
   justify-content: left;
   background-color: #ffffff;
   width: 100%;
-  gap: 20px;
 `;
 
 export const StyledImg = styled.img`
   width: 423px;
-  /* padding: 0 0 20px 0; */
 `;
 
 export const FotoWrapper = styled.div`
